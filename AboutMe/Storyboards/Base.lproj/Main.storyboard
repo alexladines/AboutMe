@@ -36,34 +36,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3T-JB-B2b">
-                                <rect key="frame" x="82" y="87" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAe-od-rt0">
                                 <rect key="frame" x="105" y="116" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oG-IZ-BvB">
+                                <rect key="frame" x="105" y="818" width="203" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Introduce Yourself"/>
+                                <connections>
+                                    <action selector="introduceYourselfButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="goJ-wu-1dx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="fmR-5Q-e5k" firstAttribute="top" secondItem="p3T-JB-B2b" secondAttribute="bottom" constant="8" symbolic="YES" id="5Of-DC-9iW"/>
-                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="baseline" secondItem="QNH-jd-ov7" secondAttribute="baseline" id="7OK-pQ-Smq"/>
-                            <constraint firstItem="p3T-JB-B2b" firstAttribute="leading" secondItem="Eeb-ha-J2m" secondAttribute="trailing" constant="14" id="C4v-lM-y92"/>
-                            <constraint firstItem="fmR-5Q-e5k" firstAttribute="baseline" secondItem="FAe-od-rt0" secondAttribute="baseline" id="PWZ-NJ-2DP"/>
-                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="leading" secondItem="fmR-5Q-e5k" secondAttribute="leading" id="QCW-kc-GG2"/>
-                            <constraint firstItem="p3T-JB-B2b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="SNv-hE-iyV"/>
-                            <constraint firstItem="p3T-JB-B2b" firstAttribute="leading" secondItem="QNH-jd-ov7" secondAttribute="leading" id="Y4e-ZM-gSO"/>
-                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eKa-Vc-M22"/>
-                            <constraint firstItem="FAe-od-rt0" firstAttribute="leading" secondItem="fmR-5Q-e5k" secondAttribute="trailing" constant="17" id="uau-7B-AGV"/>
-                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="zbO-Nv-xpI"/>
+                            <constraint firstItem="QNH-jd-ov7" firstAttribute="leading" secondItem="Eeb-ha-J2m" secondAttribute="trailing" constant="14" id="5d7-NW-YJx"/>
+                            <constraint firstItem="6oG-IZ-BvB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9dE-9B-VMR"/>
+                            <constraint firstItem="fmR-5Q-e5k" firstAttribute="top" secondItem="Eeb-ha-J2m" secondAttribute="bottom" constant="7" id="G74-L8-9iL"/>
+                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="QgI-YP-k8J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6oG-IZ-BvB" secondAttribute="bottom" id="WHM-M9-rp2"/>
+                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="baseline" secondItem="QNH-jd-ov7" secondAttribute="baseline" id="WTg-5T-McD"/>
+                            <constraint firstItem="FAe-od-rt0" firstAttribute="leading" secondItem="fmR-5Q-e5k" secondAttribute="trailing" constant="17" id="kXW-Ce-0oF"/>
+                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pOb-PR-qgz"/>
+                            <constraint firstItem="Eeb-ha-J2m" firstAttribute="leading" secondItem="fmR-5Q-e5k" secondAttribute="leading" id="wcG-ab-0hA"/>
+                            <constraint firstItem="fmR-5Q-e5k" firstAttribute="baseline" secondItem="FAe-od-rt0" secondAttribute="baseline" id="yL0-N4-Afi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbiesLabel" destination="FAe-od-rt0" id="CkE-qy-Cq3"/>
+                        <outlet property="nameLabel" destination="QNH-jd-ov7" id="ynq-wG-xnQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
