@@ -16,11 +16,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        nameLabel.text = ""
+        hobbiesLabel.text = ""
     }
 
     @IBAction func introduceYourselfButtonPressed(_ sender: Any) {
         nameLabel.text = "Alejandro Ladines-Macias"
-        hobbiesLabel.text = "Rock Climbing"
+        hobbiesLabel.text = "Rock Climbing, Weight Lifting, Walking"
     }
     
 }
